@@ -14,8 +14,9 @@
         <module>shared-dto</module>
         <module>shared-commons</module>
 
+        <module>utils-registry-server</module>
+
         <module>app-audit-server</module>
-        <module>app-authorization-server</module>
         <module>app-notification-server</module>
         <module>app-resource-server</module>
         <module>app-i18n-server</module>
@@ -24,10 +25,5 @@
 
         <module>app-backend-server</module>
         <module>app-frontend-application</module>
-
-        <module>utils-config-server</module>
-        <module>utils-discovery-server</module>
-        <module>utils-monitoring-application</module>
-        <module>utils-admin-server</module>
     </modules>
 </project>
