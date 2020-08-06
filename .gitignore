@@ -13,7 +13,7 @@
 /utils-discovery-server/
 /utils-monitoring-application/
 /utils-registry-server/
-/utils-codegen
-/tree-flow
+/utils-codegen/
+/tree-flow/
 
 *.iml
