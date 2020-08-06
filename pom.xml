@@ -11,10 +11,11 @@
 
     <name>jHapy Root (Framework)</name>
     <modules>
+        <module>utils-codegen</module>
+        <module>utils-registry-server</module>
+
         <module>shared-dto</module>
         <module>shared-commons</module>
-
-        <module>utils-registry-server</module>
 
         <module>app-audit-server</module>
         <module>app-notification-server</module>
