@@ -13,5 +13,6 @@
 /utils-discovery-server/
 /utils-monitoring-application/
 /utils-codegen
+/tree-flow
 
 *.iml
