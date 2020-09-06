@@ -12,6 +12,7 @@
     <name>jHapy Root (Framework)</name>
     <modules>
         <module>tree-flow</module>
+        <module>cropper-js-root</module>
 
         <module>utils-codegen</module>
         <module>utils-registry-server</module>
