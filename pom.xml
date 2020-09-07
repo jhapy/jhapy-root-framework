@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.jhapy</groupId>
-    <artifactId>jhapy-root-framework</artifactId>
+    <artifactId>jhapy</artifactId>
     <version>2.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
@@ -27,7 +27,7 @@
 
         <module>app-base-server</module>
 
-        <!--module>app-backend-server</module-->
+        <module>app-backend-server</module>
         <module>app-frontend-application</module>
     </modules>
 </project>
