@@ -11,6 +11,7 @@
 
     <name>jHapy Root (Framework)</name>
     <modules>
+        <module>AceEditor</module>
         <module>tree-flow</module>
         <module>cropper-js-root</module>
 
