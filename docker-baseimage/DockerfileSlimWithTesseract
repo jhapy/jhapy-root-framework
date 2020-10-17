@@ -1,0 +1,9 @@
+FROM openjdk:15-jdk-slim-buster
+
+MAINTAINER jHapy Lead Dev <jhapy@jhapy.org>
+
+RUN apt-get update -y && \
+    apt-get install -y curl tesseract-ocr tesseract-ocr-eng tesseract-ocr-fra tesseract-ocr-ara && \
+    apt-get purge -y --auto-remove
+
+RUN apt-get autoclean
