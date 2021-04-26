@@ -15,6 +15,7 @@
         <module>tree-flow</module>
         <module>cropper-js-root</module>
         <module>REST-API-Client</module>
+        <module>leaflet4vaadin</module>
 
         <!--module>utils-codegen</module-->
         <!--module>utils-registry-server</module-->
