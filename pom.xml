@@ -17,11 +17,11 @@
   </properties>
 
   <modules>
-    <!--module>AceEditor</module-->
+    <!--module>AceEditor</module>
     <module>tree-flow</module>
     <module>cropper-js-root</module>
     <module>REST-API-Client</module>
-    <module>leaflet4vaadin</module>
+    <module>leaflet4vaadin</module-->
 
     <!--module>utils-codegen</module-->
     <!--module>utils-registry-server</module-->
@@ -38,8 +38,8 @@
 
     <module>app-base-server</module>
 
-    <module>app-backend-server</module>
-    <module>app-frontend-application</module>
+    <module>app-base-backend-server</module>
+    <module>app-base-frontend-application</module>
   </modules>
 
   <build>
