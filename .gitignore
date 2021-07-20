@@ -13,7 +13,7 @@
 /utils-discovery-server/
 /utils-monitoring-application/
 /utils-codegen
-
+/spring-boot-rest-generator/
 *.iml
 /utils-registry-server/
 /utils-codegen/
