@@ -1,30 +1,38 @@
-apiVersion: skaffold/v2beta7
+apiVersion: skaffold/v2beta8
 kind: Config
 build:
   artifacts:
-  - image: utils-registry-server
-    context: utils-registry-server
-    jib: {}
-  - image: app-i18n-server
-    context: app-i18n-server
-    jib: { args: ["-Pk8s,dev"]}
-  - image: app-audit-server
-    context: app-audit-server
-    jib: { args: ["-Pk8s,dev"]}
-  - image: app-notification-server
-    context: app-notification-server
-    jib: { args: [ "-Pk8s,dev,swagger" ] }
-  - image: app-resource-server
-    context: app-resource-server
-    jib: { args: [ "-Pk8s,dev" ] }
+    - image: utils-registry-server
+      context: utils-registry-server
+      jib: { }
+    - image: app-i18n-server
+      context: app-i18n-server
+      jib:
+        args:
+          - -Pk8s,dev
+    - image: app-audit-server
+      context: app-audit-server
+      jib:
+        args:
+          - -Pk8s,dev
+    - image: app-notification-server
+      context: app-notification-server
+      jib:
+        args:
+          - -Pk8s,dev,swagger
+    - image: app-resource-server
+      context: app-resource-server
+      jib:
+        args:
+          - -Pk8s,dev
   tagPolicy:
     envTemplate:
       template: '{{.IMAGE_NAME}}:latest'
 deploy:
   kubectl:
     manifests:
-    - utils-registry-server/k8s/*
-    - app-i18n-server/k8s/*
-    - app-audit-server/k8s/*
-    - app-notification-server/k8s/*
-    - app-resource-server/k8s/*
+      - utils-registry-server/k8s/*
+      - app-i18n-server/k8s/*
+      - app-audit-server/k8s/*
+      - app-notification-server/k8s/*
+      - app-resource-server/k8s/*

@@ -17,7 +17,7 @@
 
         <module>utils-codegen</module>
         <module>utils-registry-server</module>
-        <module>utils-spring-boot-admin-server</module>
+        <!--module>utils-spring-boot-admin-server</module-->
 
         <module>shared-dto</module>
         <module>shared-commons</module>
