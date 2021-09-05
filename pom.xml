@@ -1,62 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.jhapy</groupId>
-  <artifactId>jhapy</artifactId>
-  <version>3.0.0-SNAPSHOT</version>
-  <packaging>pom</packaging>
+    <groupId>org.jhapy</groupId>
+    <artifactId>jhapy</artifactId>
+    <version>3.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
-  <name>jHapy Framework</name>
+    <name>jHapy Framework</name>
 
-  <properties>
-    <sonar-maven-plugin.version>3.8.0.2131</sonar-maven-plugin.version>
-  </properties>
+    <properties>
+        <sonar-maven-plugin.version>3.8.0.2131</sonar-maven-plugin.version>
+    </properties>
 
-  <modules>
-    <!--module>AceEditor</module>
-    <module>tree-flow</module>
-    <module>cropper-js-root</module>
-    <module>REST-API-Client</module>
-    <module>leaflet4vaadin</module-->
+    <modules>
+        <!--module>AceEditor</module>
+        <module>tree-flow</module>
+        <module>cropper-js-root</module>
+        <module>REST-API-Client</module>
+        <module>leaflet4vaadin</module-->
 
-    <!--module>utils-codegen</module-->
-    <!--module>utils-registry-server</module-->
-    <module>jhapy-bom</module>
-    <module>utils-spring-boot-admin-server</module>
+        <!--module>utils-codegen</module-->
+        <!--module>utils-registry-server</module-->
+        <module>jhapy-bom</module>
+        <module>utils-spring-boot-admin-server</module>
 
-    <module>shared-dto</module>
-    <module>shared-commons</module>
+        <module>shared-dto</module>
+        <module>shared-commons</module>
 
-    <module>app-audit-server</module>
-    <module>app-notification-server</module>
-    <module>app-resource-server</module>
-    <module>app-i18n-server</module>
+        <module>mailcow-api-client</module>
+        <module>vaadin_fullcalendar</module>
+        <module>app-audit-server</module>
+        <module>app-notification-server</module>
+        <module>app-resource-server</module>
+        <module>app-i18n-server</module>
 
-    <module>app-base-server</module>
+        <module>app-base-server</module>
 
-    <module>app-base-backend-server</module>
-    <module>app-base-frontend-application</module>
-  </modules>
+        <module>app-base-backend-server</module>
+        <module>app-base-frontend-application</module>
+    </modules>
 
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.sonarsource.scanner.maven</groupId>
-        <artifactId>sonar-maven-plugin</artifactId>
-      </plugin>
-    </plugins>
-    <pluginManagement>
-      <plugins>
-        <plugin>
-          <groupId>org.sonarsource.scanner.maven</groupId>
-          <artifactId>sonar-maven-plugin</artifactId>
-          <version>${sonar-maven-plugin.version}</version>
-        </plugin>
-      </plugins>
-    </pluginManagement>
-  </build>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.sonarsource.scanner.maven</groupId>
+                    <artifactId>sonar-maven-plugin</artifactId>
+                    <version>${sonar-maven-plugin.version}</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 </project>
