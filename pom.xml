@@ -32,6 +32,7 @@
         <module>shared-commons</module>
 
         <module>mailcow-api-client</module>
+        <module>multiple-select</module>
         <module>vaadin_fullcalendar</module>
         <module>app-audit-server</module>
         <module>app-notification-server</module>
